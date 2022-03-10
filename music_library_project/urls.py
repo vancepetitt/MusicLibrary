@@ -18,5 +18,5 @@ from django.urls import path, include #necessary to get functionality
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/songs/', include('songs.urls')) #creates pathway for the URL after the server
+    path('api/music/', include('songs.urls')) #creates pathway for the URL after the server
 ]
