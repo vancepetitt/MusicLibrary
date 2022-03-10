@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'rest_framework',
+    'songs',
 ]
 
 MIDDLEWARE = [
@@ -118,6 +120,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 try:
-    from music_library_project import *
+    from music_library_project.local_settings import *
 except ImportError:
     pass
